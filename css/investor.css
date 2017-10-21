@@ -42,7 +42,7 @@ input[type=submit] {
 /* Floating column for inputs: 75% width */
 .col-75 {
   float: left;
-  width: 75%;
+  width: 100%;
   margin-top: 6px;
 }
 
@@ -52,11 +52,4 @@ input[type=submit] {
   display: table;
   clear: both;
 }
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
 }
