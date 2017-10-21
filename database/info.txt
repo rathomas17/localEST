@@ -1,0 +1,26 @@
+DROP TABLE IF EXISTS table_name;
+
+CREATE TABLE table_name (
+Name varchar(200),
+Num varchar(50),
+EPAreviewStart varchar(20),
+EPAreviewEnd varchar(20),
+60DayPetitionStart varchar(20),
+60DayPetitionEnd varchar(20),
+Comment varbinary(200)
+);
+
+LOAD DATA INFILE '~/path/to/file/file_name.csv'
+INTO TABLE table_name
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\r'
+IGNORE 1 ROWS;
+
+
+TO LIST ALL DATA
+
+SELECT attribute, COUNT(*) FROM table_name GROUP BY attribute ORDER BY attribute
+
+
+ALTER TABLE MYTABLE ADD MYNEWCOLUMN VARCHAR(200) DEFAULT 'SNUGGLES'
