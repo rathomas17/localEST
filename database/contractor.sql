@@ -1,4 +1,4 @@
-DROP TABLE if EXISTS contractor
+DROP TABLE if EXISTS contractor;
 
 CREATE TABLE contractor(userID VARCHAR(10),
  firstName VARCHAR(25), lastName VARCHAR(25),
