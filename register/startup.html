@@ -7,129 +7,58 @@
   </head>
   <body>
     <div class="container">
-  <form action="/startup.php">
-
-    <div class="row">
-      <div class="col-25">
-        <label for="Name">Organization Name</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="Name" name="Name" placeholder="Your organization's name..">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-25">
-        <label for="Street">Street Address</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="Street" name="Street" placeholder="Street address..">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-25">
-        <label for="City">City</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="City" name="City" placeholder="City..">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-25">
-        <label for="State">State</label>
-      </div>
-      <div class="col-75">
-        <select id="interest1" name="State">
-          <option value="Alabama">AL</option>
-          <option value="Alaska">AK</option>
-          <option value="Arizona">AZ</option>
-        </select>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-25">
-        <label for="Zip">Zip</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="Zip" name="Zip" placeholder="Zip code..">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-25">
-        <label for="Phone">Phone</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="Phone" name="Phone" placeholder="Phone number..">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-25">
-        <label for="Email">Email</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="Email" name="Email" placeholder="Email..">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-25">
-        <label for="Website">Website</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="Website" name="Website" placeholder="Website..">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-25">
-        <label for="Need1">Need1</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="Need1" name="Need1" placeholder="First need..">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-25">
-        <label for="Need2">Need1</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="Need2" name="Need2" placeholder="Second need..">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-25">
-        <label for="Need3">Need3</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="Need3" name="Need3" placeholder="Third need..">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-25">
-        <label for="Need4">Need4</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="Need4" name="Need4" placeholder="Fourth need..">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-25">
-        <label for="Need5">Need5</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="Need5" name="Need5" placeholder="Fifth need..">
-      </div>
-    </div>
-
+  <form action="/register/startup.php" method="post">
+      <p>
+          <input type="text" name="userName" placeholder="Username">
+      </p>
+      <p>
+          <input type="text" name="password" placeholder="Password">
+      </p>
+      <p>
+          <input type="text" name="orgName" placeholder="Organization Name">
+      </p>
+      <p>
+          <input type="text" name="firstName" placeholder="First Name">
+      </p>
+      <p>
+          <input type="text" name="lastName" placeholder="Last Name">
+      </p>
+      <p>
+          <input type="text" name="street" placeholder="Street Address">
+      </p>
+      <p>
+          <input type="text" name="city" placeholder="City">
+      </p>
+      <p>
+          <input type="text" name="state" placeholder="State">
+      </p>
+      <p>
+          <input type="text" name="zip" placeholder="Zip Code">
+      </p>
+      <p>
+          <input type="text" name="phone" placeholder="Phone Number">
+      </p>
+      <p>
+          <input type="text" name="email" placeholder="Email">
+      </p>
+      <p>
+          <input type="text" name="website" placeholder="Website">
+      </p>
+      <p>
+          <input type="text" name="need1" placeholder="First Need">
+      </p>
+      <p>
+          <input type="text" name="need2" placeholder="Second Need">
+      </p>
+      <p>
+          <input type="text" name="need3" placeholder="Third Need">
+      </p>
+      <p>
+          <input type="text" name="need4" placeholder="Fourth Need">
+      </p>
+      <p>
+          <input type="text" name="need5" placeholder="Fifth Need">
+      </p>
     <div class="row">
       <input type="submit" value="Submit">
     </div>
