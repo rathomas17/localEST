@@ -1,6 +1,7 @@
 DROP TABLE IF EXISTS connection;
 
 CREATE TABLE connection (
-    ID1 varchar(10),
-    ID2 varchar(10)
+    userName1 varchar(25),
+    userName2 varchar(25),
+    connectionType varchar(50)
 );
