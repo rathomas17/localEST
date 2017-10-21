@@ -1,8 +1,12 @@
 Digital Ocean IP: 104.131.182.97
-Git repo
-Templates
-Maps
-News Feeds
+  Console login: root
+  password: localest
+  SQL login: root
+  SQL password: localest
+  LOGIN INSTRUCTIONS
+    ~$: ssh root@104.131.182.97
+    ~$: mysql -u root -p
+    mysql> use localest
 
 The home page links to five different pages:
   -Sign in

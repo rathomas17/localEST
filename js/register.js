@@ -1,4 +1,4 @@
-$(function() {  
+$(function() {
   $('.btn-6')
     .on('mouseenter', function(e) {
 			var parentOffset = $(this).offset(),
