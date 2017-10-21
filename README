@@ -29,8 +29,8 @@ investor, or an employee
 The startup, investor, and contractor links will allow you to sort and directly
 view profiles
 
-1. Git repo - local
-  -python -m SingleHTTPServer 8000 &
+1. Running a local server
+    python -m SimpleHTTPServer 8000 &
 2. DO droplet - live
 3. Templates
   -home (index.html)
