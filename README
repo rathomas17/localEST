@@ -3,3 +3,46 @@ Git repo
 Templates
 Maps
 News Feeds
+
+The home page links to five different pages:
+  -Sign in
+  -Register
+  -Startup
+  -Investor
+  -Contractor
+
+The sign in link will take you to your profile after signing in
+
+The register link will take you to a split to register as a startup, an
+investor, or an employee
+
+  -The registration page will ask for basic information (name, contact information,
+    etc.) relevant to the selected category
+
+  -After registration is complete the profile will be added to the associated
+    database and the user is sent to your newly created profile
+
+The startup, investor, and contractor links will allow you to sort and directly
+view profiles
+
+1. Git repo - local
+  -python -m SingleHTTPServer 8000 &
+2. DO droplet - live
+3. Templates
+  -home (index.html)
+  -registration(register.html)
+    *Startup(register/org.html)
+    *Contractor(register/emp.html)
+    *Investor(register/inv.html)
+  -profile
+    *Startup(profile/org.html)
+    *Contractor(profile/emp.html)
+    *Investor(profile/inv.html)
+  -views
+    *Startup(org.html)
+    *Contractor(emp.html)
+    *Investor(inv.html)
+4. Map Connections
+5. News Feeds
+
+Databases are Startups, Contractors, Investors, and Connections
