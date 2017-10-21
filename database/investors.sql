@@ -1,4 +1,4 @@
-DROP TABLE if EXISTS investor
+DROP TABLE if EXISTS investor;
 
 CREATE TABLE investor(userID VARCHAR(10),
  firstName VARCHAR(25), lastName VARCHAR(25),
