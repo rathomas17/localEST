@@ -31,7 +31,7 @@ $linkedIn = $_REQUEST['linkedIn']
 $sql = "INSERT INTO investor (userName, password, firstName, lastName, companyName, availableFunding,
 interest1, interest2, interest3, avgInvestment, phone, email, twitter, instagram,
 facebook, linkedIn)
-VALUES ('$userName', $password','$first_name', '$last_name', '$companyName','$availableFunding',
+VALUES ('$userName','$password','$first_name', '$last_name', '$companyName','$availableFunding',
 '$interest1', '$interest2', '$interest3', '$avgInvestment', '$phone', '$email',
 '$twitter', '$instagram','$facebook', '$linkedIn')";
 if (mysqli_query($conn, $sql)) {
