@@ -7,15 +7,19 @@
   </head>
   <body>
     <div class="container">
-  <form action="/investor.php">
-    <div class="row">
+  <form action="/register/investor.php" method="post">
+    <p>
+
+       <input type="text" name="first_name" placeholder="First Name">
+   </p>
+    <!--<div class="row">
       <div class="col-25">
-        <label for="firstN">First Name</label>
+        <label for="firstName">First Name</label>
       </div>
       <div class="col-75">
-        <input type="text" id="firstN" name="firstname" placeholder="Your name..">
+        <input type="text" id="firstName" name="firstname" placeholder="Your name..">
       </div>
-    </div>
+    </div>-->
     <div class="row">
       <div class="col-25">
         <label for="lastN">Last Name</label>
@@ -132,9 +136,8 @@
         <input type="text" id="linkedIn" name="linkedin" placeholder="Enter LinkedIn username..">
       </div>
     </div>
-    <div class="row">
       <input type="submit" value="Submit">
-    </div>
+
   </form>
 </div>
   </body>
