@@ -56,3 +56,32 @@ if (mysqli_query($conn, $sql)) {
 
 mysqli_close($conn);
 ?>
+
+<script type="text/javascript">
+  localStorage.username = "<?php echo $user_name ?>";
+  localStorage.password = "<?php echo $password ?>";
+  localStorage.firstName = "<?php echo $first_name ?>";
+  localStorage.lastName = "<?php echo $last_name ?>";
+  localStorage.organizationName = "<?php echo $organization_name ?>";
+  localStorage.interest1 = "<?php echo $interest_1 ?>";
+  localStorage.interest2 = "<?php echo $interest_2 ?>";
+  localStorage.interest3 = "<?php echo $interest_3 ?>";
+  localStorage.possibleSalary = "<?php echo $possible_salary ?>";
+  localStorage.phone = "<?php echo $phone ?>";
+  localStorage.email = "<?php echo $email ?>";
+  localStorage.twitter = "<?php echo $twitter ?>";
+  localStorage.instagram = "<?php echo $instagram ?>";
+  localStorage.facebook = "<?php echo $facebook ?>";
+  localStorage.linkedIn = "<?php echo $linkedIn ?>";
+  localStorage.skill1 = "<?php echo $skill_1 ?>";
+  localStorage.skill1Lvl = "<?php echo $skill_1_lvl ?>";
+  localStorage.skill2 = "<?php echo $skill_2 ?>";
+  localStorage.skill2Lvl = "<?php echo $skill_2_lvl ?>";
+  localStorage.skill3 = "<?php echo $skill_3 ?>";
+  localStorage.skill3Lvl = "<?php echo $skill_3_lvl ?>";
+  localStorage.skill4 = "<?php echo $skill_4 ?>";
+  localStorage.skill4Lvl = "<?php echo $skill_4_lvl ?>";
+  localStorage.skill5 = "<?php echo $skill_5 ?>";
+  localStorage.skill5Lvl = "<?php echo $skill_5_lvl ?>";
+  location.href="../index.html";
+</script>

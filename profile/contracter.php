@@ -120,7 +120,7 @@ footer > h1 a {
 
 <body>
 
-  <h1 class="title-pen"><span>INVESTORS</span></h1>
+  <h1 class="title-pen"><span>CONTRACTORS</span></h1>
 
   <?php
   $servername = "localhost";
@@ -129,19 +129,19 @@ footer > h1 a {
   $dbname = "localest";
 
   $element1 = "
-  <div style=\"display:inline-block\"class=\"user-profile\">
+  <div class=\"user-profile\">
 	<img class=\"avatar\" src=\"https:\/\/encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTF_erFD1SeUnxEpvFjzBCCDxLvf-wlh9ZuPMqi02qGnyyBtPWdE-3KoH3s\" alt=\"Ash\" />
     <div class=\"username\">";
-    //FIRST NAME + LAST NAME
-  $element2 = "</div>
-  <div class=\"bio\">";
-  //EMAIL
-  $element3 = "</div>
-    <div class=\"description\">";
-    //INTERESTS
-  $element4="</div>";
 
-  $element5="<ul class=\"data\">
+  $element2 = "</div>
+  <div class=\"bio\">
+  	Senior UI Designer
+  </div>
+    <div class=\"description\">
+      I use to design websites and applications
+      for the web.
+  </div>
+  <ul class=\"data\">
     <li>
       <span class=\"entypo-heart\"> 127</span>
     </li>
@@ -163,21 +163,15 @@ footer > h1 a {
     die("Connection failed: " . mysqli_connect_error());
   }
 
-  $sql = "SELECT userName, firstName, lastName, companyName, interest1, interest2, interest3, avgInvestment, phone, email FROM investor";
+  $sql = "SELECT userName, firstName, lastName, organizationName, interest1, interest2, interest3, skill1, skill2, skill3, skill4, skill5, possibleSalary, phone, email, resume FROM contractor";
   $result = mysqli_query($conn, $sql);
 
   // output data of each row
 
   while($row = mysqli_fetch_array($result)) {
     echo $element1;
-    echo $row["firstName"] . " " . $row["lastName"];
+    echo $row["firstName"];
     echo $element2;
-    echo "Email: " . $row["email"]. "<br>";
-    echo $element3;
-    echo $row["interest1"] ."<br>" . $row["interest2"] ."<br>". $row["interest3"];
-    echo "<br>";
-    echo "Average Investment: " . $row["avgInvestment"];
-    echo $element4;
     echo "<br>";
     echo "<br>";
     echo "<br>";
@@ -206,7 +200,7 @@ footer > h1 a {
     </h1>
   </footer>
 
-    <script  src="investor.js"></script>
+    <script  src="contractor.js"></script>
 
 </body>
 </html>
