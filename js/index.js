@@ -21,3 +21,7 @@ $(document)
 
     })
   ;
+
+if(localStorage.username.length > 1){
+  alert("your username is " + localStorage.username);
+}
