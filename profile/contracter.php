@@ -46,17 +46,17 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           </script>
           <hr>
 
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Interests</b></p>
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
           <p><div id="interest1"></div></p>
           <script>
-          document.getElementById('interest1').innerHTML = localStorage.interest1;
+          document.getElementById('interest1').innerHTML = localStorage.skill1;
           </script>
           <!--<div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
           </div>-->
           <p><div id="interest2"></div></p>
           <script>
-          document.getElementById('interest2').innerHTML = localStorage.interest2;
+          document.getElementById('interest2').innerHTML = localStorage.skill2;
           </script>
           <!--<div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
@@ -65,11 +65,19 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           </div>-->
           <p><div id="interest3"></div></p>
           <script>
-          document.getElementById('interest3').innerHTML = localStorage.interest3;
+          document.getElementById('interest3').innerHTML = localStorage.skill3;
           </script>
           <!--<div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
           </div>-->
+          <p><div id="interest4"></div></p>
+          <script>
+          document.getElementById('interest4').innerHTML = localStorage.skill4;
+          </script>
+          <p><div id="interest5"></div></p>
+          <script>
+          document.getElementById('interest5').innerHTML = localStorage.skill5;
+          </script>
           <br>
 
 
