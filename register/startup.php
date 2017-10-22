@@ -11,7 +11,23 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$first_name = $_REQUEST['first_name'];
+$userName =  $_REQUEST['userName'];
+$password =  $_REQUEST['password'];
+$orgName =  $_REQUEST['orgName'];
+$firstName = $_REQUEST['firstName'];
+$lastName = $_REQUEST['lastName'];
+$street = $_REQUEST['street'];
+$city = $_REQUEST['city'];
+$state = $_REQUEST['state'];
+$zip = $_REQUEST['zip'];
+$phone = $_REQUEST['phone'];
+$email = $_REQUEST['email'];
+$website = $_REQUEST['website'];
+$need1 = $_REQUEST['need1'];
+$need2 = $_REQUEST['need2'];
+$need3 = $_REQUEST['need3'];
+$need4 = $_REQUEST['need4'];
+$need5 = $_REQUEST['need5'];
 
 $sql = "INSERT INTO startup (userName, password, orgName, street, city, state,
     zip, phone, email, website, need1, need2, need3, need4, need5) VALUES
