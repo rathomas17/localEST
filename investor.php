@@ -17,7 +17,7 @@
 }
 
 body {
-  background: #fffcdd;
+  background: black;
   padding: 2.23em;
 }
 
@@ -27,7 +27,7 @@ body {
   text-align: center;
 }
 .title-pen span {
-  color: #55acee;
+  color: #2184cf;
 }
 
 .user-profile {
@@ -99,19 +99,7 @@ body {
   color: #daebea;
 }
 
-footer > h1 {
-  display: block;
-  text-align: center;
-  clear: both;
-  font-family: "Coda", sans-serif;
-  color: #343f3d;
-  line-height: 6;
-  font-size: 1.6em;
-}
-footer > h1 a {
-  text-decoration: none;
-  color: #ea4c89;
-}
+
     </style>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
@@ -172,7 +160,7 @@ footer > h1 a {
     echo $element1;
     echo $row["firstName"] . " " . $row["lastName"];
     echo $element2;
-    echo "Email: " . $row["email"]. "<br>";
+    echo "<a href="."\"mailto:". $row["email"]. "\"".">" ."Email: " . $row["email"]."</a>"."<br>";
     echo $element3;
     echo $row["interest1"] ."<br>" . $row["interest2"] ."<br>". $row["interest3"];
     echo "<br>";
@@ -195,16 +183,6 @@ footer > h1 a {
 
   ?>
 
-
-
-
-
-  <footer>
-    <h1>inspired by
-  <a href="https://dribbble.com/shots/1033074-User-Profile">
-  <span class="entypo-dribbble"></span> shot</a>
-    </h1>
-  </footer>
 
     <script  src="investor.js"></script>
 
