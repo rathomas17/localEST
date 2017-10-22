@@ -21,7 +21,6 @@
   }
 
   $sql = "SELECT userName, firstName, lastName, companyName, interest1, interest2, interest3, avgInvestment, phone, email FROM investor";
-  //$query = "SELECT * FROM investor";
   $result = mysqli_query($conn, $sql);
 
     // output data of each row
@@ -43,7 +42,5 @@
 
 
   </body>
-  <script>
 
-  </script>
 </html>
