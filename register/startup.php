@@ -63,5 +63,5 @@ mysqli_close($conn);
   localStorage.need3 = "<?php echo $need3 ?>";
   localStorage.need4 = "<?php echo $need4 ?>";
   localStorage.need5 = "<?php echo $need5 ?>";
-  location.href="../index.html";
+  location.href="../profile/startup.php";
 </script>

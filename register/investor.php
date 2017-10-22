@@ -61,5 +61,5 @@ mysqli_close($conn);
   localStorage.instagram = "<?php echo $instagram ?>";
   localStorage.facebook = "<?php echo $facebook ?>";
   localStorage.linkedIn = "<?php echo $linkedIn ?>";
-  location.href="../index.html";
+  location.href="../profile/investor.php";
 </script>

@@ -83,5 +83,5 @@ mysqli_close($conn);
   localStorage.skill4Lvl = "<?php echo $skill_4_lvl ?>";
   localStorage.skill5 = "<?php echo $skill_5 ?>";
   localStorage.skill5Lvl = "<?php echo $skill_5_lvl ?>";
-  location.href="../index.html";
+  location.href="../profile/contractor.php";
 </script>
