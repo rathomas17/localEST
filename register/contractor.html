@@ -12,284 +12,249 @@
 
     <div class="container">
 
-        <a href="../index.html" class="ui inverted button">Back</a>
-  <form action="/register/contractor.php" method="post">
-    <div class="row">
-      <div class="col-25">
-        <label for="firstN">Username</label>
-        <input type="text" name="user_name" placeholder="Your name..">
+  <div class="form">
+    <div id="signup">
+      <h1>Register</h1>
+      <form action="/register/contractor.php" method="post">
+  <div class="top-row">
+      <div class="field-wrap">
+        <input name="user_name" type="text" required placeholder="Username"/>
+      </div>
+
+      <div class="field-wrap">
+        <input name="password" type="text"required placeholder="Password"/>
       </div>
     </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="firstN">Password</label>
-        <input type="text" name="password" placeholder="Your name..">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="firstN">First Name</label>
-        <input type="text" name="first_name" placeholder="Your name..">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="lastN">Last Name</label>
-        <input type="text" name="last_name" placeholder="Your last name..">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="companyN">Organization or School</label>
-        <input type="text" name="organization_Name" placeholder="Your organization or school..">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="interest1">Interest 1</label>
-        <select name="interest_1">
-          <option value="Arts">Arts</option>
-          <option value="Business">Business</option>
-          <option value="Education">Education</option>
-          <option value="Entrepeneurship">Entrepeneurship</option>
-          <option value="Environment">Environment</option>
-          <option value="Event Planning">Event Planning</option>
-          <option value="Fashion">Fashion</option>
-          <option value="Finance">Finance</option>
-          <option value="Fitness">Fitness</option>
-          <option value="Food">Food</option>
-          <option value="Interior Design">Interior Design</option>
-          <option value="Journalism">Journalism</option>
-          <option value="Landscaping">Landscaping</option>
-          <option value="Media">Media</option>
-          <option value="Medicine">Medicine</option>
-          <option value="Politics">Politics</option>
-          <option value="Retail">Retail</option>
-          <option value="Sports">Sports</option>
-          <option value="Technology">Technology</option>
-        </select>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="interest2">Interest 2</label>
-        <select name="interest_2">
-          <option value="Arts">Arts</option>
-          <option value="Business">Business</option>
-          <option value="Education">Education</option>
-          <option value="Entrepeneurship">Entrepeneurship</option>
-          <option value="Environment">Environment</option>
-          <option value="Event Planning">Event Planning</option>
-          <option value="Fashion">Fashion</option>
-          <option value="Finance">Finance</option>
-          <option value="Fitness">Fitness</option>
-          <option value="Food">Food</option>
-          <option value="Interior Design">Interior Design</option>
-          <option value="Journalism">Journalism</option>
-          <option value="Landscaping">Landscaping</option>
-          <option value="Media">Media</option>
-          <option value="Medicine">Medicine</option>
-          <option value="Politics">Politics</option>
-          <option value="Retail">Retail</option>
-          <option value="Sports">Sports</option>
-          <option value="Technology">Technology</option>
-        </select>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="interest3">Interest 3</label>
-        <select name="interest_3">
-          <option value="Arts">Arts</option>
-          <option value="Business">Business</option>
-          <option value="Education">Education</option>
-          <option value="Entrepeneurship">Entrepeneurship</option>
-          <option value="Environment">Environment</option>
-          <option value="Event Planning">Event Planning</option>
-          <option value="Fashion">Fashion</option>
-          <option value="Finance">Finance</option>
-          <option value="Fitness">Fitness</option>
-          <option value="Food">Food</option>
-          <option value="Interior Design">Interior Design</option>
-          <option value="Journalism">Journalism</option>
-          <option value="Landscaping">Landscaping</option>
-          <option value="Media">Media</option>
-          <option value="Medicine">Medicine</option>
-          <option value="Politics">Politics</option>
-          <option value="Retail">Retail</option>
-          <option value="Sports">Sports</option>
-          <option value="Technology">Technology</option>
-        </select>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="possibleSalary">Desired Salary</label>
-        <input type="text" name="possible_Salary" placeholder="Desired salary..">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="phone">Phone Number</label>
-        <input type="text" name="phone" placeholder="Enter phone number..">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="email">Email</label>
-        <input type="text" name="email" placeholder="Enter enail address..">
-      </div>
+  <div class="top-row">
+    <div class="field-wrap">
+      <input name="first_name" type="text" required placeholder="First Name"/>
     </div>
 
-    <div class="row">
-      <div class="col-25">
-        <label for="twitter">Twitter</label>
-        <input type="text" name="twitter" placeholder="Enter your Twitter handle..">
+    <div class="field-wrap">
+      <input name="last_name" type="text"required placeholder="Last Name"/>
+    </div>
+  </div>
+  <div class="field-wrap">
+    <input name="organization_Name" type="text"required placeholder="Organization Name"/>
+  </div>
+  <div class="field-wrap">
+    <input name="availableFunding" type="text"required placeholder="Available Funding"/>
+  </div>
+  <div class="field-wrap">
+    <label>Interest 1:</label>
+    <select id="options" name="interest_1">
+      <option value="Arts">Arts</option>
+      <option value="Business">Business</option>
+      <option value="Education">Education</option>
+      <option value="Entrepeneurship">Entrepeneurship</option>
+      <option value="Environment">Environment</option>
+      <option value="Event Planning">Event Planning</option>
+      <option value="Fashion">Fashion</option>
+      <option value="Finance">Finance</option>
+      <option value="Fitness">Fitness</option>
+      <option value="Food">Food</option>
+      <option value="Interior Design">Interior Design</option>
+      <option value="Journalism">Journalism</option>
+      <option value="Landscaping">Landscaping</option>
+      <option value="Media">Media</option>
+      <option value="Medicine">Medicine</option>
+      <option value="Politics">Politics</option>
+      <option value="Retail">Retail</option>
+      <option value="Sports">Sports</option>
+      <option value="Technology">Technology</option>
+    </select>
+  </div>
+  <div class="field-wrap">
+    <label>Interest 2:</label>
+    <select id="options" name="interest_2">
+      <option value="Arts">Arts</option>
+      <option value="Business">Business</option>
+      <option value="Education">Education</option>
+      <option value="Entrepeneurship">Entrepeneurship</option>
+      <option value="Environment">Environment</option>
+      <option value="Event Planning">Event Planning</option>
+      <option value="Fashion">Fashion</option>
+      <option value="Finance">Finance</option>
+      <option value="Fitness">Fitness</option>
+      <option value="Food">Food</option>
+      <option value="Interior Design">Interior Design</option>
+      <option value="Journalism">Journalism</option>
+      <option value="Landscaping">Landscaping</option>
+      <option value="Media">Media</option>
+      <option value="Medicine">Medicine</option>
+      <option value="Politics">Politics</option>
+      <option value="Retail">Retail</option>
+      <option value="Sports">Sports</option>
+      <option value="Technology">Technology</option>
+    </select>
+  </div>
+  <div class="field-wrap">
+    <label>Interest 3:</label>
+    <select id="options" name="interest_3">
+      <option value="Arts">Arts</option>
+      <option value="Business">Business</option>
+      <option value="Education">Education</option>
+      <option value="Entrepeneurship">Entrepeneurship</option>
+      <option value="Environment">Environment</option>
+      <option value="Event Planning">Event Planning</option>
+      <option value="Fashion">Fashion</option>
+      <option value="Finance">Finance</option>
+      <option value="Fitness">Fitness</option>
+      <option value="Food">Food</option>
+      <option value="Interior Design">Interior Design</option>
+      <option value="Journalism">Journalism</option>
+      <option value="Landscaping">Landscaping</option>
+      <option value="Media">Media</option>
+      <option value="Medicine">Medicine</option>
+      <option value="Politics">Politics</option>
+      <option value="Retail">Retail</option>
+      <option value="Sports">Sports</option>
+      <option value="Technology">Technology</option>
+    </select>
+  </div>
+  <div class="field-wrap">
+    <input name="possible_Salary" type="text"required placeholder="Desired Salary"/>
+  </div>
+  <div class="field-wrap">
+    <input name="phone" type="text"required placeholder="Phone"/>
+  </div>
+  <div class="field-wrap">
+    <input name="email" type="email"required placeholder="Email"/>
+  </div>
+  <div class="field-wrap">
+    <input name="twitter" type="text" placeholder="Twitter"/>
+  </div>
+  <div class="field-wrap">
+    <input name="instagram" type="text" placeholder="Instagram"/>
+  </div>
+  <div class="field-wrap">
+    <input name="facebook" type="text" placeholder="facebook"/>
+  </div>
+  <div class="field-wrap">
+    <input name="linkedIn" type="text" placeholder="LinkedIn"/>
+  </div>
+  <div class="field-wrap">
+    <label>Skill 1:</label>
+    <select id="options" name="skill_1">
+        <option value="Option 1">Option 1</option>
+        <option value="Option 2">Option 2</option>
+        <option value="Option 3">Option 3</option>
+      </select>
+      <label id="lvl">Skill Level:</label>
+      <select id="skill" name="skill_1_lvl">
+        <option value="Lvl_1">1</option>
+        <option value="Lvl_2">2</option>
+        <option value="Lvl_3">3</option>
+        <option value="Lvl_4">4</option>
+        <option value="Lvl_5">5</option>
+        <option value="Lvl_6">6</option>
+        <option value="Lvl_7">7</option>
+        <option value="Lvl_8">8</option>
+        <option value="Lvl_9">9</option>
+        <option value="Lvl_10">10</option>
+      </select>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="insta">Instagram</label>
-        <input type="text" name="instagram" placeholder="Enter Instagram username..">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="fb">Facebook</label>
-        <input type="text" name="facebook" placeholder="Enter facebook username..">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="linkedIn">LinkedIn</label>
-        <input type="text" name="linkedIn" placeholder="Enter LinkedIn username..">
-      </div>
-    </div>
-    <div class="row">
-      <input type="submit" value="Submit">
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="skill1">Skill 1</label>
-        <select name="skill_1">
-          <option value="Option 1">Option 1</option>
-          <option value="Option 2">Option 2</option>
-          <option value="Option 3">Option 3</option>
-        </select>
-        <label for="skill1Lvl">Skill 1 Level</label>
-        <select name="skill_1_lvl">
-          <option value="Lvl_1">1</option>
-          <option value="Lvl_2">2</option>
-          <option value="Lvl_3">3</option>
-          <option value="Lvl_4">4</option>
-          <option value="Lvl_5">5</option>
-          <option value="Lvl_6">6</option>
-          <option value="Lvl_7">7</option>
-          <option value="Lvl_8">8</option>
-          <option value="Lvl_9">9</option>
-          <option value="Lvl_10">10</option>
-        </select>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="skill2">Skill 2</label>
-        <select name="skill_2">
-          <option value="Option 1">Option 1</option>
-          <option value="Option 2">Option 2</option>
-          <option value="Option 3">Option 3</option>
-        </select>
-        <label for="skill2Lvl">Skill 2 Level</label>
-        <select name="skill_2_lvl">
-          <option value="Lvl_1">1</option>
-          <option value="Lvl_2">2</option>
-          <option value="Lvl_3">3</option>
-          <option value="Lvl_4">4</option>
-          <option value="Lvl_5">5</option>
-          <option value="Lvl_6">6</option>
-          <option value="Lvl_7">7</option>
-          <option value="Lvl_8">8</option>
-          <option value="Lvl_9">9</option>
-          <option value="Lvl_10">10</option>
-        </select>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="skill3">Skill 3</label>
-        <select name="skill_3">
-          <option value="Option 1">Option 1</option>
-          <option value="Option 2">Option 2</option>
-          <option value="Option 3">Option 3</option>
-        </select>
-        <label for="skill3Lvl">Skill 3 Level</label>
-        <select name="skill_3_lvl">
-          <option value="Lvl_1">1</option>
-          <option value="Lvl_2">2</option>
-          <option value="Lvl_3">3</option>
-          <option value="Lvl_4">4</option>
-          <option value="Lvl_5">5</option>
-          <option value="Lvl_6">6</option>
-          <option value="Lvl_7">7</option>
-          <option value="Lvl_8">8</option>
-          <option value="Lvl_9">9</option>
-          <option value="Lvl_10">10</option>
-        </select>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="skill4">Skill 4</label>
-        <select name="skill_4">
-          <option value="Option 1">Option 1</option>
-          <option value="Option 2">Option 2</option>
-          <option value="Option 3">Option 3</option>
-        </select>
-        <label for="skill4Lvl">Skill 4 Level</label>
-        <select name="skill_4_lvl">
-          <option value="Lvl_1">1</option>
-          <option value="Lvl_2">2</option>
-          <option value="Lvl_3">3</option>
-          <option value="Lvl_4">4</option>
-          <option value="Lvl_5">5</option>
-          <option value="Lvl_6">6</option>
-          <option value="Lvl_7">7</option>
-          <option value="Lvl_8">8</option>
-          <option value="Lvl_9">9</option>
-          <option value="Lvl_10">10</option>
-        </select>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="skill5">Skill 5</label>
-        <select name="skill_5">
-          <option value="Option 1">Option 1</option>
-          <option value="Option 2">Option 2</option>
-          <option value="Option 3">Option 3</option>
-        </select>
-        <label for="skill5Lvl">Skill 5 Level</label>
-        <select name="skill_5_lvl">
-          <option value="Lvl_1">1</option>
-          <option value="Lvl_2">2</option>
-          <option value="Lvl_3">3</option>
-          <option value="Lvl_4">4</option>
-          <option value="Lvl_5">5</option>
-          <option value="Lvl_6">6</option>
-          <option value="Lvl_7">7</option>
-          <option value="Lvl_8">8</option>
-          <option value="Lvl_9">9</option>
-          <option value="Lvl_10">10</option>
-        </select>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="resume">Resume</label>
-        <input type="text" name="resume" placeholder="Enter resume link..">
-      </div>
-    </div>
-    <div class="row">
-      <input type="submit" value="Submit">
-    </div>
+      <div class="field-wrap">
+        <label>Skill 2:</label>
+        <select id="options" name="skill_2">
+            <option value="Option 1">Option 1</option>
+            <option value="Option 2">Option 2</option>
+            <option value="Option 3">Option 3</option>
+          </select>
+          <label id="lvl">Skill Level:</label>
+          <select id="skill" name="skill_2_lvl">
+            <option value="Lvl_1">1</option>
+            <option value="Lvl_2">2</option>
+            <option value="Lvl_3">3</option>
+            <option value="Lvl_4">4</option>
+            <option value="Lvl_5">5</option>
+            <option value="Lvl_6">6</option>
+            <option value="Lvl_7">7</option>
+            <option value="Lvl_8">8</option>
+            <option value="Lvl_9">9</option>
+            <option value="Lvl_10">10</option>
+          </select>
+          </div>
+          <div class="field-wrap">
+            <label>Skill 3:</label>
+            <select id="options" name="skill_3">
+                <option value="Option 1">Option 1</option>
+                <option value="Option 2">Option 2</option>
+                <option value="Option 3">Option 3</option>
+              </select>
+              <label id="lvl">Skill Level:</label>
+              <select id="skill" name="skill_3_lvl">
+                <option value="Lvl_1">1</option>
+                <option value="Lvl_2">2</option>
+                <option value="Lvl_3">3</option>
+                <option value="Lvl_4">4</option>
+                <option value="Lvl_5">5</option>
+                <option value="Lvl_6">6</option>
+                <option value="Lvl_7">7</option>
+                <option value="Lvl_8">8</option>
+                <option value="Lvl_9">9</option>
+                <option value="Lvl_10">10</option>
+              </select>
+              </div>
+              <div class="field-wrap">
+                <label>Skill 4:</label>
+                <select id="options" name="skill_4">
+                    <option value="Option 1">Option 1</option>
+                    <option value="Option 2">Option 2</option>
+                    <option value="Option 3">Option 3</option>
+                  </select>
+                  <label id="lvl">Skill Level:</label>
+                  <select id="skill" name="skill_4_lvl">
+                    <option value="Lvl_1">1</option>
+                    <option value="Lvl_2">2</option>
+                    <option value="Lvl_3">3</option>
+                    <option value="Lvl_4">4</option>
+                    <option value="Lvl_5">5</option>
+                    <option value="Lvl_6">6</option>
+                    <option value="Lvl_7">7</option>
+                    <option value="Lvl_8">8</option>
+                    <option value="Lvl_9">9</option>
+                    <option value="Lvl_10">10</option>
+                  </select>
+                  </div>
+                  <div class="field-wrap">
+                    <label>Skill 5:</label>
+                    <select id="options" name="skill_5">
+                        <option value="Option 1">Option 1</option>
+                        <option value="Option 2">Option 2</option>
+                        <option value="Option 3">Option 3</option>
+                      </select>
+                      <label id="lvl">Skill Level:</label>
+                      <select id="skill" name="skill_5_lvl">
+                        <option value="Lvl_1">1</option>
+                        <option value="Lvl_2">2</option>
+                        <option value="Lvl_3">3</option>
+                        <option value="Lvl_4">4</option>
+                        <option value="Lvl_5">5</option>
+                        <option value="Lvl_6">6</option>
+                        <option value="Lvl_7">7</option>
+                        <option value="Lvl_8">8</option>
+                        <option value="Lvl_9">9</option>
+                        <option value="Lvl_10">10</option>
+                      </select>
+                    </div>
+                    <div>
+                      <input class="file" name="resume" type="file"/>
+                    </div>
+
+
+  <button type="submit" id="reg" class="button button-block"/>Register</button>
+  <button href="/index.html" class="button button-block" id="back">Back</button>
   </form>
+
 </div>
-  </body>
+
+
+
+</div>
+</div>
+
+
+<script  src="../js/index.js"></script>
+</body>
 </html>

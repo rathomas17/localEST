@@ -7,7 +7,10 @@ body {
   background: #c1bdba;
   font-family: 'Titillium Web', sans-serif;
 }
-
+input.file {
+  font-size: 15px;
+  border: none;
+}
 .form {
   background: rgba(19, 35, 47, 0.9);
   padding: 40px;
@@ -35,6 +38,12 @@ label {
 #options {
   margin: 6px 0 0 120px;
   color: #2184cf;
+}
+#skill{
+  margin: 6px 0 0 150px;
+}
+#lvl{
+  margin-left: 20px;
 }
 
 input, textarea {
