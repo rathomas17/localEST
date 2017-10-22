@@ -129,19 +129,19 @@ footer > h1 a {
   $dbname = "localest";
 
   $element1 = "
-  <div class=\"user-profile\">
+  <div style=\"display:inline-block\"class=\"user-profile\">
 	<img class=\"avatar\" src=\"https:\/\/encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTF_erFD1SeUnxEpvFjzBCCDxLvf-wlh9ZuPMqi02qGnyyBtPWdE-3KoH3s\" alt=\"Ash\" />
     <div class=\"username\">";
-
+    //FIRST NAME + LAST NAME
   $element2 = "</div>
-  <div class=\"bio\">
-  	Senior UI Designer
-  </div>
-    <div class=\"description\">
-      I use to design websites and applications
-      for the web.
-  </div>
-  <ul class=\"data\">
+  <div class=\"bio\">";
+  //EMAIL
+  $element3 = "</div>
+    <div class=\"description\">";
+    //INTERESTS
+  $element4="</div>";
+
+  $element5="<ul class=\"data\">
     <li>
       <span class=\"entypo-heart\"> 127</span>
     </li>
@@ -170,8 +170,14 @@ footer > h1 a {
 
   while($row = mysqli_fetch_array($result)) {
     echo $element1;
-    echo $row["firstName"];
+    echo $row["firstName"] . " " . $row["lastName"];
     echo $element2;
+    echo "Email: " . $row["email"]. "<br>";
+    echo $element3;
+    echo $row["interest1"] ."<br>" . $row["interest2"] ."<br>". $row["interest3"];
+    echo "<br>";
+    echo "Average Investment: " . $row["avgInvestment"];
+    echo $element4;
     echo "<br>";
     echo "<br>";
     echo "<br>";
