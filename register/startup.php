@@ -47,5 +47,21 @@ mysqli_close($conn);
 
 <script type="text/javascript">
   localStorage.username = "<?php echo $userName ?>";
+  localStorage.password = "<?php echo $password ?>";
+  localStorage.orgName = "<?php echo $orgName ?>";
+  localStorage.firstName = "<?php echo $firstName ?>";
+  localStorage.lastName = "<?php echo $lastName ?>";
+  localStorage.street = "<?php echo $street ?>";
+  localStorage.city = "<?php echo $city ?>";
+  localStorage.state = "<?php echo $state ?>";
+  localStorage.zip = "<?php echo $zip ?>";
+  localStorage.phone = "<?php echo $phone ?>";
+  localStorage.email = "<?php echo $email ?>";
+  localStorage.website = "<?php echo $website ?>";
+  localStorage.need1 = "<?php echo $need1 ?>";
+  localStorage.need2 = "<?php echo $need2 ?>";
+  localStorage.need3 = "<?php echo $need3 ?>";
+  localStorage.need4 = "<?php echo $need4 ?>";
+  localStorage.need5 = "<?php echo $need5 ?>";
   location.href="../index.html";
 </script>

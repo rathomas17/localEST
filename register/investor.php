@@ -46,5 +46,20 @@ mysqli_close($conn);
 
 <script type="text/javascript">
   localStorage.username = "<?php echo $userName ?>";
+  localStorage.password = "<?php echo $password ?>";
+  localStorage.firstName = "<?php echo $first_name ?>";
+  localStorage.lastName = "<?php echo $last_name ?>";
+  localStorage.companyName = "<?php echo $companyName ?>";
+  localStorage.availableFunding = "<?php echo $availableFunding ?>";
+  localStorage.interest1 = "<?php echo $interest1 ?>";
+  localStorage.interest2 = "<?php echo $interest2 ?>";
+  localStorage.interest3 = "<?php echo $interest3 ?>";
+  localStorage.avgInvestment = "<?php echo $avgInvestment ?>";
+  localStorage.phone = "<?php echo $phone ?>";
+  localStorage.email = "<?php echo $email ?>";
+  localStorage.twitter = "<?php echo $twitter ?>";
+  localStorage.instagram = "<?php echo $instagram ?>";
+  localStorage.facebook = "<?php echo $facebook ?>";
+  localStorage.linkedIn = "<?php echo $linkedIn ?>";
   location.href="../index.html";
 </script>
