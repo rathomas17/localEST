@@ -91,14 +91,10 @@ body {
     <div class="ui container">
       <div class="ui large secondary inverted pointing menu">
 
-        <a class="active item">Home</a>
-        <a class="item">Work</a>
-        <a class="item">Company</a>
-        <a class="item">Careers</a>
-        <div class="right item">
-          <a href="../loginroute.html" class="ui inverted button">Log in</a>
-          <a href="../register.html" class="ui inverted button">Sign Up</a>
-        </div>
+        <a class="active item" href="index.html" class="ui inverted button">Home</a>
+        <a class="item" href="contractor.php">Contractors</a>
+        <a class="item" href="investor.php">Investors</a>
+        <a class="item" href="startup.php">Startups</a>
       </div>
     </div>
 
