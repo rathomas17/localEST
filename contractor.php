@@ -17,7 +17,7 @@
   }
 
   body {
-    background: black;
+    background: lightgrey;
     padding: 2.23em;
   }
 
