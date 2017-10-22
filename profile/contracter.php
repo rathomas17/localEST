@@ -1,206 +1,134 @@
 <!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>User profile </title>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+
+    <!-- Left Column -->
+    <div class="w3-third">
+
+      <div class="w3-white w3-text-grey w3-card-4">
+        <!--<div class="w3-display-container">
+          <img src="/w3images/avatar_hat.jpg" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2>Jane Doe</h2>
+          </div>
+        </div>-->
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i><div id="userName"></div></p>
+          <script>
+          document.getElementById('userName').innerHTML = localStorage.userName;
+          </script>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i><div id="linkedIN"></div></p>
+          <script>
+          document.getElementById('linkedIN').innerHTML = localStorage.linkedIn;
+          </script>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><div id="email"></div></p>
+          <script>
+          document.getElementById('email').innerHTML = localStorage.email;
+          </script>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><div id="phone"></div></p>
+          <script>
+          document.getElementById('phone').innerHTML = localStorage.phone;
+          </script>
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Interests</b></p>
+          <p><div id="interest1"></div></p>
+          <script>
+          document.getElementById('interest1').innerHTML = localStorage.interest1;
+          </script>
+          <!--<div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+          </div>-->
+          <p><div id="interest2"></div></p>
+          <script>
+          document.getElementById('interest2').innerHTML = localStorage.interest2;
+          </script>
+          <!--<div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+              <div class="w3-center w3-text-white">80%</div>
+            </div>
+          </div>-->
+          <p><div id="interest3"></div></p>
+          <script>
+          document.getElementById('interest3').innerHTML = localStorage.interest3;
+          </script>
+          <!--<div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+          </div>-->
+          <br>
+
+
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+
+      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16">Welcome back, <div id="firstName"></div></h2>
+        <script>
+        document.getElementById('firstName').innerHTML = localStorage.firstName;
+        </script>
+        <!--<div class="w3-container">
+          <h5 class="w3-opacity"><b></b></h5>
+
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
+          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+        </div>
+      </div>-->
 
 
 
-      <style>
-      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
-      /* CSS design by @jofpin */
-@import url(https://fonts.googleapis.com/css?family=Raleway|Varela+Round|Coda);
-@import url(http://weloveiconfonts.com/api/?family=entypo);
+    <!-- End Right Column -->
+    </div>
 
-[class*="entypo-"]:before {
-  font-family: 'entypo', sans-serif;
-}
-
-body {
-  background: #fffcdd;
-  padding: 2.23em;
-}
-
-.title-pen {
-  color: #333;
-  font-family: "Coda", sans-serif;
-  text-align: center;
-}
-.title-pen span {
-  color: #55acee;
-}
-
-.user-profile {
-  margin: auto;
-	width: 25em;
-  height: 11em;
-  background: #fff;
-  border-radius: .3em;
-}
-
-.user-profile  .username {
-  margin: auto;
-  margin-top: -4.40em;
-  margin-left: 5.80em;
-  color: #658585;
-  font-size: 1.53em;
-  font-family: "Coda", sans-serif;
-  font-weight: bold;
-}
-.user-profile  .bio {
-  margin: auto;
-  display: inline-block;
-  margin-left: 10.43em;
-  color: #e76043;
-  font-size: .87em;
-  font-family: "varela round", sans-serif;
-}
-.user-profile > .description {
-  margin: auto;
-  margin-top: 1.35em;
-  margin-right: 4.43em;
-  width: 14em;
-  color: #c0c5c5;
-  font-size: .87em;
-  font-family: "varela round", sans-serif;
-}
-.user-profile > img.avatar {
-	padding: .7em;
-  margin-left: .3em;
-  margin-top: .3em;
-  height: 6.23em;
-  width: 6.23em;
-  border-radius: 18em;
-}
-
-.user-profile ul.data {
-	margin: 2em auto;
-	height: 3.70em;
-  background: #4eb6b6;
-  text-align: center;
-  border-radius: 0 0 .3em .3em;
-}
-.user-profile li {
-	margin: 0 auto;
-  padding: 1.30em;
-  width: 33.33334%;
-  display: table-cell;
-  text-align: center;
-}
-
-.user-profile span {
-	font-family: "varela round", sans-serif;
-	color: #e3eeee;
-  white-space: nowrap;
-  font-size: 1.27em;
-  font-weight: bold;
-}
-.user-profile span:hover {
-  color: #daebea;
-}
-
-footer > h1 {
-  display: block;
-  text-align: center;
-  clear: both;
-  font-family: "Coda", sans-serif;
-  color: #343f3d;
-  line-height: 6;
-  font-size: 1.6em;
-}
-footer > h1 a {
-  text-decoration: none;
-  color: #ea4c89;
-}
-    </style>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-
-</head>
-
-<body>
-
-  <h1 class="title-pen"><span>CONTRACTORS</span></h1>
-
-  <?php
-  $servername = "localhost";
-  $username = "root";
-  $password = "localest";
-  $dbname = "localest";
-
-  $element1 = "
-  <div class=\"user-profile\">
-	<img class=\"avatar\" src=\"https:\/\/encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTF_erFD1SeUnxEpvFjzBCCDxLvf-wlh9ZuPMqi02qGnyyBtPWdE-3KoH3s\" alt=\"Ash\" />
-    <div class=\"username\">";
-
-  $element2 = "</div>
-  <div class=\"bio\">
-  	Senior UI Designer
+  <!-- End Grid -->
   </div>
-    <div class=\"description\">
-      I use to design websites and applications
-      for the web.
-  </div>
-  <ul class=\"data\">
-    <li>
-      <span class=\"entypo-heart\"> 127</span>
-    </li>
-    <li>
-      <span class=\"entypo-eye\"> 853</span>
-    </li>
-    <li>
-      <span class=\"entypo-user\"> 311</span>
-    </li>
- </ul>
+
+  <!-- End Page Container -->
 </div>
 
-";
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
 
-  // Create connection
-  $conn = mysqli_connect($servername, $username, $password, $dbname);
-  // Check connection
-  if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-  }
-
-  $sql = "SELECT userName, firstName, lastName, organizationName, interest1, interest2, interest3, skill1, skill2, skill3, skill4, skill5, possibleSalary, phone, email, resume FROM contractor";
-  $result = mysqli_query($conn, $sql);
-
-  // output data of each row
-
-  while($row = mysqli_fetch_array($result)) {
-    echo $element1;
-    echo $row["firstName"];
-    echo $element2;
-    echo "<br>";
-    echo "<br>";
-    echo "<br>";
-    //echo "Name: " . $row["firstName"]. " " . $row["lastName"]."<br>"."Company: " . $row["companyName"]."<br>" . "Interest 1: " . $row["interest1"]."<br>"
-    //. "Interest 2: " . $row["interest2"]."<br>"
-    //. "Interest 3: " . $row["interest3"]."<br>"
-    //. "Average Investment: " . $row["avgInvestment"]."<br>"
-    //. "Phone: " . $row["phone"]. "<br>"
-   //."Email: " . $row["email"]. "<br>"."<br>";
-  //echo "Name = " . $row['userName'];
-  //echo "loop"
-  }
-  mysqli_close($conn);
-
-
-  ?>
-
-
-
-
-
-  <footer>
-    <h1>inspired by
-  <a href="https://dribbble.com/shots/1033074-User-Profile">
-  <span class="entypo-dribbble"></span> shot</a>
-    </h1>
-  </footer>
-
-    <script  src="contractor.js"></script>
+</footer>
 
 </body>
 </html>
