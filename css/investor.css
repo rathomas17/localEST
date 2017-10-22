@@ -1,4 +1,4 @@
-*/ Style inputs, select elements and textareas */
+
 input[type=text], select, textarea{
   width: 100%;
   padding: 12px;
@@ -16,13 +16,14 @@ label {
 
 /* Style the submit button */
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: #2184cf;
   color: white;
-  padding: 12px 20px;
+  padding: 12px 40px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   float: right;
+  margin-top: 20px;
 }
 
 /* Style the container */
@@ -42,14 +43,14 @@ input[type=submit] {
 /* Floating column for inputs: 75% width */
 .col-75 {
   float: left;
-  width: 100%;
+  width: 75%;
   margin-top: 6px;
 }
+
 
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
-}
 }
