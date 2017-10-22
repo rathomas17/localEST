@@ -27,7 +27,7 @@ $password =  $_REQUEST['password'];
 
 $sql = "SELECT userName, password, firstName, lastName, companyName, interest1, interest2, interest3, avgInvestment, phone, email FROM investor";
 $result = mysqli_query($conn, $sql);
-
+$first_name = mysqli_query($conn, "SELECT firstName FROM investor WHERE username = '$userName'");
 
 mysqli_close($conn);
 
