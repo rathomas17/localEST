@@ -8,37 +8,61 @@
   <body>
     <div class="container">
   <form action="/register/investor.php" method="post">
+<<<<<<< HEAD
        <input type="text" name="first_name" placeholder="First Name">
     <!--<div class="row">
+=======
+  <!--  <p>
+
+       <input type="text" name="first_name" placeholder="First Name">
+   </p>-->
+   <div class="row">
+     <div class="col-25">
+       <label for="userName">Username</label>
+     </div>
+     <div class="col-75">
+       <input type="text" name="userName" placeholder="Enter Username..">
+     </div>
+   </div>
+   <div class="row">
+     <div class="col-25">
+       <label for="password">Password</label>
+     </div>
+     <div class="col-75">
+       <input type="text" name="password" placeholder="Enter password..">
+     </div>
+   </div>
+    <div class="row">
+>>>>>>> 132b2f15bd5fad08d95620286bdf9f2109f72476
       <div class="col-25">
         <label for="firstName">First Name</label>
       </div>
       <div class="col-75">
-        <input type="text" id="firstName" name="firstname" placeholder="Your name..">
-      </div>
-    </div>-->
-    <div class="row">
-      <div class="col-25">
-        <label for="lastN">Last Name</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="lastN" name="lastname" placeholder="Your last name..">
+        <input type="text" name="first_name" placeholder="Your name..">
       </div>
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="companyN">Company Name</label>
+        <label for="lastName">Last Name</label>
       </div>
       <div class="col-75">
-        <input type="text" id="companyN" name="companyname" placeholder="Your company name..">
+        <input type="text" name="last_name" placeholder="Your last name..">
       </div>
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="availFund">Available Funding</label>
+        <label for="companyName">Company Name</label>
       </div>
       <div class="col-75">
-        <input type="text" id="availFund" name="availablefunding" placeholder="Amount of funding available..">
+        <input type="text" name="companyName" placeholder="Your company name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="availableFunding">Available Funding</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="availableFunding" placeholder="Amount of funding available..">
       </div>
     </div>
     <div class="row">
@@ -46,7 +70,7 @@
         <label for="interest1">Interest 1</label>
       </div>
       <div class="col-75">
-        <select id="interest1" name="interest1">
+        <select name="interest1">
           <option value="Option 1">Option 1</option>
           <option value="Option 2">Option 2</option>
           <option value="Option 3">Option 3</option>
@@ -58,7 +82,7 @@
         <label for="interest2">Interest 2</label>
       </div>
       <div class="col-75">
-        <select id="interest2" name="interest2">
+        <select name="interest2">
           <option value="Option 1">Option 1</option>
           <option value="Option 2">Option 2</option>
           <option value="Option 3">Option 3</option>
@@ -70,7 +94,7 @@
         <label for="interest3">Interest 3</label>
       </div>
       <div class="col-75">
-        <select id="interest3" name="interest3">
+        <select name="interest3">
           <option value="Option 1">Option 1</option>
           <option value="Option 2">Option 2</option>
           <option value="Option 3">Option 3</option>
@@ -79,10 +103,10 @@
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="avgInvest">Average Investment</label>
+        <label for="avgInvestment">Average Investment</label>
       </div>
       <div class="col-75">
-        <input type="text" id="avgInvest" name="averageinvesment" placeholder="Amount of average investment..">
+        <input type="text" name="avgInvesment" placeholder="Amount of average investment..">
       </div>
     </div>
     <div class="row">
@@ -90,7 +114,7 @@
         <label for="phone">Phone Number</label>
       </div>
       <div class="col-75">
-        <input type="text" id="phone" name="phonenumber" placeholder="Enter phone number..">
+        <input type="text" name="phone" placeholder="Enter phone number..">
       </div>
     </div>
     <div class="row">
@@ -98,7 +122,7 @@
         <label for="email">Email</label>
       </div>
       <div class="col-75">
-        <input type="text" id="email" name="email" placeholder="Enter enail address..">
+        <input type="text" name="email" placeholder="Enter enail address..">
       </div>
     </div>
     <div class="row">
@@ -106,23 +130,23 @@
         <label for="twitter">Twitter</label>
       </div>
       <div class="col-75">
-        <input type="text" id="twitter" name="twitter" placeholder="Enter your Twitter handle..">
+        <input type="text" name="twitter" placeholder="Enter your Twitter handle..">
       </div>
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="insta">Instagram</label>
+        <label for="instagram">Instagram</label>
       </div>
       <div class="col-75">
-        <input type="text" id="insta" name="instagram" placeholder="Enter Instagram username..">
+        <input type="text" name="instagram" placeholder="Enter Instagram username..">
       </div>
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="fb">Facebook</label>
+        <label for="facebook">Facebook</label>
       </div>
       <div class="col-75">
-        <input type="text" id="fb" name="facebook" placeholder="Enter facebook username..">
+        <input type="text" name="facebook" placeholder="Enter facebook username..">
       </div>
     </div>
     <div class="row">
@@ -130,7 +154,7 @@
         <label for="linkedIn">LinkedIn</label>
       </div>
       <div class="col-75">
-        <input type="text" id="linkedIn" name="linkedin" placeholder="Enter LinkedIn username..">
+        <input type="text" name="linkedIn" placeholder="Enter LinkedIn username..">
       </div>
     </div>
       <input type="submit" value="Submit">

@@ -1,5 +1,5 @@
 <?php
-$servername = "104.131.182.97";
+$servername = "localhost";
 $username = "root";
 $password = "localest";
 $dbname = "localest";
@@ -11,10 +11,12 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "INSERT INTO startup (Org_ID, Name, Street, City, State, Zip, Phone,
-    Email, Website, Need1, Need2, Need3, Need4, Need5) VALUES (Org_ID, Name,
-    Street, City, State, Zip, Phone, Email, Website, Need1, Need2, Need3, Need4,
-    Need5)";
+$first_name = $_REQUEST['first_name'];
+
+$sql = "INSERT INTO startup (userName, password, orgName, street, city, state,
+    zip, phone, email, website, need1, need2, need3, need4, need5) VALUES
+    (userName, password, orgName, street, city, state, zip, phone, email,
+    website, need1, need2, need3, need4, need5)";
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
