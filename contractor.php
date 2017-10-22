@@ -165,7 +165,6 @@
         echo $element5;
         echo "Skill 1: " . $row["skill1"]. "Level: " . $row["skill1Lvl"]. "<br>" . "Skill 2: " . $row["skill2"]. "Level: " . $row["skill2Lvl"]. "<br>" . "Skill 3: " . $row["skill3"]. "Level: "
         . $row["skill3Lvl"]. "<br>" ."Desired Salary: " . $row["possibleSalary"];
-        ;
     }
   }
 
