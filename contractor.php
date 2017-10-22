@@ -158,7 +158,7 @@
         echo "<a href="."\"mailto:". $row["email"]. "\"".">" ."Email: " . $row["email"]."</a>"."<br>";
         echo $element3;
         echo "Organization: ". $row["organizationName"]."<br>" .
-        "Phone: " . $row["phone"]. "<br>"
+        "Phone: " . $row["phone"];
         echo $element4;
         echo "Interest 1: " . $row["interest1"]."<br>" . "Interest 2: " . $row["interest2"]."<br>" . "Interest 3: "
         . $row["interest3"];
