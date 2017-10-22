@@ -11,6 +11,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
+//COMMENT
 $userName =  $_REQUEST['userName'];
 $password =  $_REQUEST['password'];
 $orgName =  $_REQUEST['orgName'];
@@ -29,10 +30,11 @@ $need3 = $_REQUEST['need3'];
 $need4 = $_REQUEST['need4'];
 $need5 = $_REQUEST['need5'];
 
-$sql = "INSERT INTO startup (userName, password, orgName, street, city, state,
+$sql = "INSERT INTO startup (userName, password, orgName, firstName, lastName, street, city, state,
     zip, phone, email, website, need1, need2, need3, need4, need5) VALUES
-    (userName, password, orgName, street, city, state, zip, phone, email,
-    website, need1, need2, need3, need4, need5)";
+    ('$userName', '$password', '$orgName', '$firstName', '$lastName', '$street', '$city', '$state', '$zip',
+    '$phone', '$email', '$website', '$need1', '$need2', '$need3', '$need4',
+    '$need5')";
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
@@ -42,3 +44,8 @@ if (mysqli_query($conn, $sql)) {
 
 mysqli_close($conn);
 ?>
+
+<script type="text/javascript">
+  localStorage.username = "<?php echo $userName ?>";
+  location.href="../index.html";
+</script>
