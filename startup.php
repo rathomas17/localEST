@@ -26,21 +26,18 @@
     // output data of each row
     while($row = mysqli_fetch_assoc($result)) {
         echo "Name: " . $row["firstName"]. " " . $row["lastName"]."<br>"
-        "Organization: ". $row["orgName"]."<br>"
-        "Need 1: " . $row["need1"]."<br>"
-        "Need 2: " . $row["need2"]."<br>"
-        "Need 3: " . $row["need3"]."<br>"
-        "Need 4: " . $row["need4"]."<br>"
-        "Need 5: " . $row["need5"]."<br>"
-        "Address: " . $row["street"]. " " . $row["city"]. ", " . $row["state"]. " " . $row["zip"]."<br>"
-        "Phone: " . $row["phone"]. "<br>"
-        "Email: " . $row["email"]. "<br>"
+        . "Organization: ". $row["orgName"]."<br>"
+        . "Need 1: " . $row["need1"]."<br>"
+        . "Need 2: " . $row["need2"]."<br>"
+        . "Need 3: " . $row["need3"]."<br>"
+        . "Need 4: " . $row["need4"]."<br>"
+        . "Need 5: " . $row["need5"]."<br>"
+        . "Address: " . $row["street"]. " " . $row["city"]. ", " . $row["state"]. " " . $row["zip"]."<br>"
+        . "Phone: " . $row["phone"]. "<br>"
+        . "Email: " . $row["email"]. "<br>"
         ;
     }
-  } else {
-    echo "0 results";
   }
-
   mysqli_close($conn);
     ?>
   </body>
