@@ -3,69 +3,121 @@
   <head>
     <meta charset="utf-8">
     <title>startup registration</title>
-    <link rel="stylesheet" href="/css/investor.css">
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/investor.css">
   </head>
   <body>
     <div class="container">
-
-        <a href="../index.html" class="ui inverted button">Back</a>
-
   <form action="/register/startup.php" method="post">
-      <p>
-          <input type="text" name="userName" placeholder="Username">
-      </p>
-      <p>
-          <input type="text" name="password" placeholder="Password">
-      </p>
-      <p>
-          <input type="text" name="orgName" placeholder="Organization Name">
-      </p>
-      <p>
-          <input type="text" name="firstName" placeholder="First Name">
-      </p>
-      <p>
-          <input type="text" name="lastName" placeholder="Last Name">
-      </p>
-      <p>
-          <input type="text" name="street" placeholder="Street Address">
-      </p>
-      <p>
-          <input type="text" name="city" placeholder="City">
-      </p>
-      <p>
-          <input type="text" name="state" placeholder="State">
-      </p>
-      <p>
-          <input type="text" name="zip" placeholder="Zip Code">
-      </p>
-      <p>
-          <input type="text" name="phone" placeholder="Phone Number">
-      </p>
-      <p>
-          <input type="text" name="email" placeholder="Email">
-      </p>
-      <p>
-          <input type="text" name="website" placeholder="Website">
-      </p>
-      <p>
-          <input type="text" name="need1" placeholder="First Need">
-      </p>
-      <p>
-          <input type="text" name="need2" placeholder="Second Need">
-      </p>
-      <p>
-          <input type="text" name="need3" placeholder="Third Need">
-      </p>
-      <p>
-          <input type="text" name="need4" placeholder="Fourth Need">
-      </p>
-      <p>
-          <input type="text" name="need5" placeholder="Fifth Need">
-      </p>
-    <div class="row">
-      <input type="submit" value="Submit">
+
+<div class="container">
+
+  <div class="form">
+    <div id="signup">
+      <h1>Register</h1>
+      <form action="/register/investor.php" method="post">
+  <div class="top-row">
+      <div class="field-wrap">
+        <input name="userName" type="text" required placeholder="Username"/>
+      </div>
+
+      <div class="field-wrap">
+        <input name="password" type="text"required placeholder="Password"/>
+      </div>
     </div>
+  <div class="top-row">
+    <div class="field-wrap">
+      <input name="first_name" type="text" required placeholder="First Name"/>
+    </div>
+
+    <div class="field-wrap">
+      <input name="last_name" type="text"required placeholder="Last Name"/>
+    </div>
+  </div>
+  <div class="field-wrap">
+    <input name="orgName" type="text"required placeholder="Organization Name"/>
+  </div>
+  <div class="top-row">
+      <div class="field-wrap">
+        <input name="street" type="text" required placeholder="Street Address"/>
+      </div>
+
+      <div class="field-wrap">
+        <input name="city" type="text"required placeholder="City"/>
+      </div>
+    </div>
+    <div class="top-row">
+        <div class="field-wrap">
+          <input name="state" type="text" required placeholder="State"/>
+        </div>
+
+        <div class="field-wrap">
+          <input name="zip" type="text"required placeholder="Zip code"/>
+        </div>
+      </div>
+  <div class="field-wrap">
+    <label>Need 1:</label>
+    <select id="options" name="need1">
+      <option value="Option 1">Option 1</option>
+      <option value="Option 2">Option 2</option>
+      <option value="Option 3">Option 3</option>
+    </select>
+  </div>
+  <div class="field-wrap">
+    <label>Need 2:</label>
+    <select id="options" name="need2">
+      <option value="Option 1">Option 1</option>
+      <option value="Option 2">Option 2</option>
+      <option value="Option 3">Option 3</option>
+    </select>
+  </div>
+  <div class="field-wrap">
+    <label>Need 3:</label>
+    <select id="options" name="need3">
+      <option value="Option 1">Option 1</option>
+      <option value="Option 2">Option 2</option>
+      <option value="Option 3">Option 3</option>
+    </select>
+  </div>
+  <div class="field-wrap">
+    <label>Need 4:</label>
+    <select id="options" name="need4">
+      <option value="Option 1">Option 1</option>
+      <option value="Option 2">Option 2</option>
+      <option value="Option 3">Option 3</option>
+    </select>
+  </div>
+  <div class="field-wrap">
+    <label>Need 5:</label>
+    <select id="options" name="need5">
+      <option value="Option 1">Option 1</option>
+      <option value="Option 2">Option 2</option>
+      <option value="Option 3">Option 3</option>
+    </select>
+  </div>
+  <div class="field-wrap">
+    <input name="phone" type="text"required placeholder="Phone"/>
+  </div>
+  <div class="field-wrap">
+    <input name="email" type="email"required placeholder="Email"/>
+  </div>
+  <div class="field-wrap">
+    <input name="website" type="text"required placeholder="Website"/>
+  </div>
+
+
+  <button type="submit" id="reg" class="button button-block"/>Register</button>
+  <button href="/index.html" class="button button-block" id="back">Back</button>
   </form>
+
 </div>
-  </body>
+
+
+
+</div>
+</div>
+
+
+<script  src="../js/index.js"></script>
+</body>
 </html>
