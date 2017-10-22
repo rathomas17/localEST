@@ -59,7 +59,7 @@ body {
 }
 .line svg path {
   fill-opacity: 0;
-  stroke: #f00;
+
   stroke-width: 5;
   stroke-dasharray: 870;
   stroke-dashoffset: 870;
@@ -91,14 +91,10 @@ body {
     <div class="ui container">
       <div class="ui large secondary inverted pointing menu">
 
-        <a class="active item">Home</a>
-        <a class="item">Work</a>
-        <a class="item">Company</a>
-        <a class="item">Careers</a>
-        <div class="right item">
-          <a href="../loginroute.html" class="ui inverted button">Log in</a>
-          <a href="../register.html" class="ui inverted button">Sign Up</a>
-        </div>
+        <a class="active item" href="index.html" class="ui inverted button">Home</a>
+        <a class="item" href="contractor.php">Contractors</a>
+        <a class="item" href="investor.php">Investors</a>
+        <a class="item" href="startup.php">Startups</a>
       </div>
     </div>
 
@@ -114,8 +110,10 @@ body {
   <div class='map'></div>
   <div class='line'>
     <svg height='830' viewBox='0 0 1591 830' width='1591'>
-      <path d='m370.92,632.3,339.85-137.45,139.33-80.962,20.711,5.6485c37.93-69.02,86.29-135.73,166.59-207.11l25.418-44.247'></path>
-      <path d='m111.42,632.3,111.85-137.45,131.33-10.12,20.711,4.6485c37.14-69.02,86.29-135.73,11.59-207.11l25.11-44.247'></path>
+      <path d='m370.92,632.3,339.85-137.45,139.33-80.962,20.711,5.6485c37.93-69.02,86.29-135.73,166.59-207.11l25.418-44.247'stroke="blue" stroke-width="2" fill="none" ></path>
+      <path d='m111.42,632.3,111.85-137.45,131.33-10.12,20.711,4.6485c37.14-69.02,86.29-135.73,11.59-207.11l25.11-44.247' stroke="red" stroke-width="2" fill="none"></path>
+
+      <path d="M10 10 C 20 20, 40 20, 50 10" stroke="black" fill="transparent"/>
     </svg>
   </div>
 </div>
